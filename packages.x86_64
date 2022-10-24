@@ -34,7 +34,7 @@ gpart
 gpm
 gptfdisk
 grml-zsh-config
-grub
+#grub
 hdparm
 hyperv
 intel-ucode
@@ -110,7 +110,7 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
+#vim
 virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
@@ -120,3 +120,9 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+
+# Arkane
+gnome
+firefox
+networkmanager
+neovim
