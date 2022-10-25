@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="arkanelinux"
-iso_label="ARCH_$(date +%Y%m)"
+iso_label="ARKANE_$(date +%Y%m)"
 iso_publisher="Arkane Linux <https://arkanelinux.org>"
 iso_application="Arkane Linux Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
