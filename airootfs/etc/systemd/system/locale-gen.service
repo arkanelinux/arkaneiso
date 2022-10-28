@@ -1,9 +1,10 @@
 [Unit]
-Description=Run locale-gen
+Description=Generate locales using locale-gen
+Before=display-manager.service
 
 [Service]
 Type=oneshot
-RemainAfterExit=yes
+RemainAfterExit=true
 ExecStart=/usr/local/bin/generate_locale
 
 [Install]
