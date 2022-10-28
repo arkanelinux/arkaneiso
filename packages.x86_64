@@ -121,16 +121,52 @@ xfsprogs
 xl2tpd
 zsh
 
-# Arkane
-gnome
+### Arkane
+# GNOME
+gdm
+gnome-shell
+gnome-console
+endeavour
+epiphany
+nautilus
+gnome-backgrounds
+gnome-boxes
+gnome-calendar
+gnome-calculator
+gnome-characters
+gnome-clocks
+gnome-control-center
+gnome-disk-utility
+gnome-firmware
+gnome-logs
+gnome-initial-setup
+gnome-maps
+gnome-music
+gnome-screenshot
+gnome-software
+gnome-system-monitor
+gnome-text-editor
+
+dconf-editor
+totem
+evince
+eog
+
+# Additional apps
 firefox
-networkmanager
+neovim
+
+# Fonts
+noto-fonts
+noto-fonts-emoji
+
+# Background and services
 pipewire
 pipewire-pulse
 pipewire-jack
 pipewire-alsa
 wireplumber
-neovim
-gnu-free-fonts
-noto-fonts-emoji
+networkmanager
+
+# OS installation and tweaks
 os-installer
