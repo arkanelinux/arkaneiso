@@ -1,0 +1,87 @@
+%YAML 1.2
+---
+# This is an example config file for OS-Installer.
+# Place your config under /etc/os-installer/config.yaml for it to be used.
+# If a value is not defined, it's default will be used.
+
+# Some strings can have translations by appending an underscore followed by a
+# language code, e.g. "name_fr" or "description_pt_BR". These parameters have
+# the _LC suffix in their description. No suffix is needed for English.
+
+# Name of the distribution.
+# Default: 'Untitled'
+distribution_name: 'Debuntorarch'
+
+# Whether the installation needs an internet connection.
+# Default: yes
+internet_connection_required: yes
+
+# A URL/IP address to be used to check for an existing internet connection.
+# Default: 'http://nmcheck.gnome.org/check_network_status.txt'
+internet_checker_url: 'http://nmcheck.gnome.org/check_network_status.txt'
+
+# Skip the language selection dialog by specifing a language, e.g. 'pt_BR'
+# Default: no
+fixed_language: no
+
+# A selection of languages the installer should present by default.
+# Note: For a language to be available, it needs to be provided by the system
+# and the installer needs to have a translation into that language.
+# Default: ['ar', 'de', 'en', 'es', 'fr', 'ja', 'ru', 'zh']
+suggested_languages:
+    - 'ar'
+    - 'de'
+    - 'en'
+    - 'es'
+    - 'fr'
+    - 'ja'
+    - 'ru'
+    - 'zh'
+
+# Show a welcome page after language selection.
+#
+# logo    string  Optional. Path to a logo (e.g. distribution logo)
+# text_LC string  Optional. Welcome text. Translatable.
+# usage   bool    Whether to show a welcome page at all.
+#
+# Default: logo: None, text: None, usage: yes
+welcome_page:
+    logo    : '/your/distribution/logo.png'
+    text    : 'A welcoming text to inform about the installation.'
+    text_de : 'Ein Begrüßungstext um die Installation zu erklären.'
+    usage   : yes
+
+# Minimum disk size needed for the installation (in Gigabyte)
+# Default: 5
+minimum_disk_size: 5
+
+# Whether to offer setting a disk encryption PIN
+# Default: yes
+offer_disk_encryption: yes
+
+# List of software that can additionally be selected for installation.
+# Each packages requires all fields to be set.
+#
+# package         string  Forwarded to the installation script as is.
+# suggested       bool    Optional. Whether installation defaults to yes.
+# name_LC         string  Name presented to user. Translatable.
+#                         If no (English) name is available, it will only
+#                         be shown for translated languages.
+# description_LC  string  Optional. Description presented to user. Translatable.
+# icon_path       string  Optional. Absolute path to icon to be displayed.
+#
+# Default: [], suggested: False, description: '', icon_path: fallback icon
+additional_software:
+    - package        : 'firefox'
+      suggested      : yes
+      name           : 'Firefox'
+      name_de        : 'Feuerfuchs'
+      description    : 'Popular Web Browser from Mozilla'
+      description_de : 'Beliebter Internet-Browser von Mozilla'
+      icon_path      : '/etc/os-installer/icons/firefox.png'
+    - package        : 'some-backend'
+      name           : 'Iconless Backend Functionality'
+    - package        : 'japanese-input-program'
+      suggested      : yes
+      name_jp        : 'Input Program'
+      icon_path      : '/etc/os-installer/icons/libreoffice-main.png'
