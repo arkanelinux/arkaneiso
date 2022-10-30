@@ -20,7 +20,7 @@ sudo mkarchiso -v -w workdir/ .
 ```
 Once the building process is finished you can find the ISO image inside of the `./out` directory.
 ### 4. Rebuilding the ISO
-When building a second time you will have to remove the `./out` and `./workdir`.
+When building a second time you will have to remove the `./out` and `./workdir` directories.
 ```
 sudo rm -rf ./out ./workdir
 ```
