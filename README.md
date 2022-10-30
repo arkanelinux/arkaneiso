@@ -16,7 +16,7 @@ git clone https://github.com/arkanelinux/build-scripts.git
 ### 3. Build
 ```
 cd build-scripts
-sudo mkarchiso -v -w workdir/ .
+sudo mkarchiso -v -w workdir/ -o out/ .
 ```
 Once the building process is finished you can find the ISO image inside of the `./out` directory.
 ### 4. Rebuilding the ISO
