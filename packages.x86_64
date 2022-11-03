@@ -169,4 +169,5 @@ wireplumber
 networkmanager
 
 # OS installation and tweaks
+filesystem-arkane
 os-installer
