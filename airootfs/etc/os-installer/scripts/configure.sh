@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/bash
 
 # This is an example configuration script. For OS-Installer to use it, place it at:
 # /etc/os-installer/scripts/configure.sh
@@ -29,33 +29,23 @@ then
     exit 1
 fi
 
-echo 'Configuration started.'
-echo ''
-echo 'Variables set to:'
-echo 'OSI_LOCALE               ' $OSI_LOCALE
-echo 'OSI_DEVICE_PATH          ' $OSI_DEVICE_PATH
-echo 'OSI_DEVICE_IS_PARTITION  ' $OSI_DEVICE_IS_PARTITION
-echo 'OSI_DEVICE_EFI_PARTITION ' $OSI_DEVICE_EFI_PARTITION
-echo 'OSI_USE_ENCRYPTION       ' $OSI_USE_ENCRYPTION
-echo 'OSI_ENCRYPTION_PIN       ' $OSI_ENCRYPTION_PIN
-echo 'OSI_USER_NAME            ' $OSI_USER_NAME
-echo 'OSI_USER_AUTOLOGIN       ' $OSI_USER_AUTOLOGIN
-echo 'OSI_USER_PASSWORD        ' $OSI_USER_PASSWORD
-echo 'OSI_FORMATS              ' $OSI_FORMATS
-echo 'OSI_TIMEZONE             ' $OSI_TIMEZONE
-echo 'OSI_ADDITIONAL_SOFTWARE  ' $OSI_ADDITIONAL_SOFTWARE
-echo ''
+# Enable systemd services
+while read i; do
+	sudo arch-chroot /mnt systemctl enable $i
+done < /etc/os-installer/bits/systemd.services
 
-# Pretending to do something
-echo 'Pretending to do something'
+# Generate locales
+sudo cp /etc/locale.gen /mnt/etc/locale.gen
+sudo arch-chroot /mnt locale-gen
 
-for i in {1..5}
-do
-    sleep 1
-    echo -n '.'
-done
-
-echo
-echo 'Configuration completed.'
+# Apply configuration tweaks
+echo "Applying configuration..."
+sudo cp /etc/os-installer/bits/gdm/custom.conf /mnt/etc/gdm/custom.conf
+sudo arch-chroot /mnt chown gdm:gdm /etc/gdm/custom.conf
+sudo cp /etc/os-installer/bits/systemd-boot/arkane.conf /mnt/boot/loader/entries/
+sudo cp /etc/os-installer/bits/systemd-boot/arkane-fallback.conf /mnt/boot/loader/entries/
+sudo cp /etc/os-installer/bits/systemd-boot/loader.conf /mnt/boot/loader/
+sudo sed -i 's/#\ %wheel\ ALL=(ALL:ALL)\ ALL/%wheel\ ALL=(ALL:ALL)\ ALL/g' /mnt/etc/sudoers
+echo "LANG=en_US.UTF-8" | sudo tee /mnt/etc/locale.conf
 
 exit 0
