@@ -171,3 +171,4 @@ networkmanager
 # OS installation and tweaks
 filesystem-arkane
 os-installer
+os-installer-config
