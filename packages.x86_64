@@ -167,6 +167,9 @@ pipewire-alsa
 wireplumber
 networkmanager
 
+# Startup
+plymouth
+
 # OS installation and tweaks
 filesystem-arkane
 os-installer
