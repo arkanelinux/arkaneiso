@@ -1,4 +1,4 @@
-# Arkane Linux build scripts
+# Arkane Linux ISO build scripts
 The Arkane Linux build scripts are used to build the Arkane Linux installation ISO images.
 
 ## Getting Arkane Linux
