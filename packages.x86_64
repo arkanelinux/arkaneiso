@@ -174,3 +174,5 @@ plymouth
 filesystem-arkane
 os-installer
 os-installer-config
+skel-arkane
+firefox-tweaks-arkane
