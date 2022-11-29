@@ -24,6 +24,7 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/generate_locale"]="0:0:755"
+  ["/etc/default/useradd"]="0:0:600"
   ["/etc/gshadow"]="0:0:400"
   ["/etc/sudoers"]="0:0:400"
   ["/etc/locale.gen"]="0:0:644"
