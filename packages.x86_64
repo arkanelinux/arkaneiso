@@ -33,7 +33,7 @@ fatresize
 gpart
 #gpm
 gptfdisk
-grml-zsh-config
+#grml-zsh-config
 #grub
 hdparm
 hyperv
@@ -176,3 +176,8 @@ os-installer
 os-installer-config
 skel-arkane
 firefox-tweaks-arkane
+
+# Zsh
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
