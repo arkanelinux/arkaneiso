@@ -181,3 +181,6 @@ firefox-tweaks-arkane
 zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
+
+# Keyring
+arkane-keyring
