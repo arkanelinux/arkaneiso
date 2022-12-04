@@ -123,37 +123,12 @@ zsh
 
 ### Arkane
 # GNOME
+epiphany
 gdm
-gnome-shell
-gnome-console
-endeavour
-nautilus
-gnome-backgrounds
-gnome-boxes
-gnome-calendar
-gnome-calculator
-gnome-characters
-gnome-clocks
 gnome-control-center
 gnome-disk-utility
-gnome-firmware
-gnome-logs
-gnome-initial-setup
-gnome-maps
-gnome-music
-gnome-screenshot
-gnome-software
-gnome-system-monitor
-gnome-text-editor
-
-dconf-editor
-totem
-evince
-eog
-
-# Additional apps
-firefox
-neovim
+gnome-shell
+gnome-terminal
 
 # Fonts
 noto-fonts
@@ -170,12 +145,14 @@ networkmanager
 # Startup
 plymouth
 
+# Session
+gnome-kiosk
+
 # OS installation and tweaks
 filesystem-arkane
 os-installer
 os-installer-config
 skel-arkane
-firefox-tweaks-arkane
 
 # Zsh
 zsh-autosuggestions
