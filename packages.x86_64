@@ -184,3 +184,6 @@ zsh-syntax-highlighting
 
 # Keyring
 arkane-keyring
+
+# Spice
+spice-vdagent
