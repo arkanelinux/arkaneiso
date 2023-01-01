@@ -11,11 +11,11 @@ sudo pacman -S archiso
 ```
 ### 2. Pull the repository
 ```
-git clone https://github.com/arkanelinux/build-scripts.git
+git clone https://github.com/arkanelinux/arkaneiso.git
 ```
 ### 3. Build
 ```
-cd build-scripts
+cd arkaneiso
 sudo mkarchiso -v -w workdir/ -o out/ .
 ```
 Once the building process is finished you can find the ISO image inside of the `./out` directory.
