@@ -164,3 +164,6 @@ arkane-keyring
 
 # Spice
 spice-vdagent
+
+# Text editor
+neovim
