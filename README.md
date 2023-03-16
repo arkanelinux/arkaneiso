@@ -1,24 +1,21 @@
-<table style="border: 0px">
-	<tr>
-		<td style="border: 0px">
-			<center>
-				<picture>
-				  <img src="https://raw.githubusercontent.com/arkanelinux/artwork/main/arkanelinux-logo/1200x1200/arkanelinux-logo.png" alt="Arkane linux" align="center" height="250">
-				</picture>
-			</center>
-		</td>
-	</tr>
-	<tr style="background-color: white">
-		<td style="border: 0px">
-			<h1 align="center">Arkane Linux</h1>
-			<h3 align="center" style="text-decoration: none">Archiso disk image building configuration</h3>
-		</td>
-	</tr>
-</table>
+<div align="center">
+	<a href="https://arkanelinux.org" align="center">
+		<center align="center">
+			<picture>
+			 	<img src="https://raw.githubusercontent.com/arkanelinux/artwork/main/arkanelinux-logo/1200x1200/arkanelinux-logo.png" alt="Arkane Linux" align="center" height="200">
+			</picture>
+		</center>
+	</a>
+	<br>
+	<h1 align="center"><center>Arkane Linux</center></h1>
+	<h3 align="center"><center>Archiso configuration for disk image creation</center></h3>
+	<br>
+	<br>
+</div>
 
 ---
 <br>
-<br>
+
 
 ## Getting Arkane Linux
 Arkane Linux provides ISO images over at the [Arkane Linux download page](https://download.arkanelinux.org/).
