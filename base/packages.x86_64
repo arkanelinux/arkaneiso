@@ -35,8 +35,6 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
-grub
 hdparm
 hyperv
 intel-ucode
@@ -61,8 +59,6 @@ man-db
 #man-pages
 mc
 mdadm
-memtest86+
-memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -102,7 +98,6 @@ smartmontools
 sof-firmware
 squashfs-tools
 sudo
-syslinux
 systemd-resolvconf
 tcpdump
 terminus-font
@@ -113,7 +108,6 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
 virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
@@ -124,10 +118,18 @@ xfsprogs
 xl2tpd
 zsh
 
+# Customizations
+filesystem-arkane
+lsb-release-arkane
+neovim
+skel-arkane
+zsh-autosuggestions
+zsh-syntax-highlighting
+
 # Workarounds, remove later
 arkane-keyring
+gsasl
 libb2
 libsigsegv
-rtmpdump
-gsasl
 libsodium
+rtmpdump
