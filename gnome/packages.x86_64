@@ -56,7 +56,7 @@ linux-firmware-marvell
 #lvm2
 #lynx
 man-db
-man-pages
+#man-pages
 mc
 mdadm
 memtest86+
@@ -167,3 +167,10 @@ spice-vdagent
 
 # Text editor
 neovim
+
+# x86-64-v3 deps
+libsigsegv
+libb2
+rtmpdump
+apparmor
+gsasl
