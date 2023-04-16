@@ -1,0 +1,35 @@
+base
+cloud-init
+hyperv
+linux
+mkinitcpio
+mkinitcpio-archiso
+open-vm-tools
+openssh
+pv
+qemu-guest-agent
+virtualbox-guest-utils-nox
+arkane-keyring
+intel-ucode
+amd-ucode
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+zsh-completions
+skel-arkane
+neovim
+networkmanager
+sudo
+
+# OS installation tools
+f2fs-tools
+btrfs-progs
+
+
+# Additional dependencies
+libb2
+libsigsegv
+rtmpdump
+gsasl
+apparmor
+libbsd
