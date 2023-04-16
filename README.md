@@ -17,9 +17,12 @@
 
 
 ## What is Arkane Linux
-Arkane Linux is a a full rebuild of Arch Linux for the x86-64-v3 architecture target.
+Arkane Linux is a a full rebuild of Arch Linux for the x86-64-v3 microarchitecture level.
 
 ## Getting Arkane Linux
+
+> **Warning** We are still in alpha
+
 Arkane Linux provides ISO images over at the [Arkane Linux download page](https://download.arkanelinux.org/).
 
 ## Building the ISO
