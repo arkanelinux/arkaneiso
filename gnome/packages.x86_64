@@ -1,26 +1,23 @@
 base
-cloud-init
-hyperv
 linux
 linux-firmware
 mkinitcpio
 mkinitcpio-archiso
-open-vm-tools
 openssh
 pv
-qemu-guest-agent
-virtualbox-guest-utils-nox
 arkane-keyring
 intel-ucode
 amd-ucode
-zsh
-zsh-autosuggestions
-zsh-syntax-highlighting
-zsh-completions
-skel-arkane
+
+# Shell
 neovim
 networkmanager
+skel-arkane
 sudo
+zsh
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
 
 # OS installation tools
 f2fs-tools
@@ -56,10 +53,13 @@ xdg-desktop-portal-gnome
 
 # VM
 spice-vdagent
+qemu-guest-agent
 
-# Additional dependencies
+# Additional dependencies, remove when build has been sorted out
 libb2
 libsigsegv
 rtmpdump
 gsasl
 libbsd
+libdecore
+libdeflate
