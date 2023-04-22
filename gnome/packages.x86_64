@@ -51,6 +51,10 @@ pipewire-jack
 pipewire-pulse
 wireplumber
 xdg-desktop-portal-gnome
+bluez
+bluez-utils
+bluez-plugins
+bluez-cups
 
 # VM
 spice-vdagent
