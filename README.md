@@ -25,6 +25,12 @@ Arkane Linux is a a full rebuild of Arch Linux for the x86-64-v3 microarchitectu
 
 Arkane Linux provides ISO images over at the [Arkane Linux download page](https://download.arkanelinux.org/).
 
+## Available configurations
+| Config | About |
+| --- | --- |
+| baseline | An ultra-minimal basic configuration suitable as a template for new configs |
+| gnome | The Arkane Linux flagship release, a GNOME-centered experience featuring a graphical installer |
+
 ## Building the ISO
 ### 1. Install the build tools
 
