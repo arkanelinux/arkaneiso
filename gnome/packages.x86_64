@@ -25,6 +25,10 @@ btrfs-progs
 
 # GNOME ISO
 apparmor
+bluez
+bluez-cups
+bluez-plugins
+bluez-utils
 cheese
 evince
 firefox
@@ -49,12 +53,9 @@ pipewire-alsa
 pipewire-audio
 pipewire-jack
 pipewire-pulse
+power-profiles-daemon
 wireplumber
 xdg-desktop-portal-gnome
-bluez
-bluez-utils
-bluez-plugins
-bluez-cups
 
 # VM
 spice-vdagent
