@@ -55,12 +55,3 @@ xdg-desktop-portal-gnome
 # VM
 spice-vdagent
 qemu-guest-agent
-
-# Additional dependencies, remove when build has been sorted out
-libb2
-libsigsegv
-rtmpdump
-gsasl
-libbsd
-libdecore
-libdeflate
