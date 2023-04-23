@@ -45,9 +45,11 @@ gnome-disk-utility
 gnome-maps
 gnome-photos
 gnome-shell
+gnome-software
 gnome-text-editor
 gnome-weather
 loupe
+nautilus
 pipewire
 pipewire-alsa
 pipewire-audio
