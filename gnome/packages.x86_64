@@ -24,6 +24,7 @@ f2fs-tools
 btrfs-progs
 
 # GNOME ISO
+amberol
 apparmor
 bluez
 bluez-cups
@@ -42,7 +43,6 @@ gnome-contacts
 gnome-control-center
 gnome-disk-utility
 gnome-maps
-gnome-music
 gnome-photos
 gnome-shell
 gnome-text-editor
