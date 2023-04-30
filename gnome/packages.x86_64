@@ -58,6 +58,7 @@ pipewire-pulse
 power-profiles-daemon
 wireplumber
 xdg-desktop-portal-gnome
+celluloid
 
 # VM
 spice-vdagent
