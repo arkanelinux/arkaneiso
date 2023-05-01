@@ -30,6 +30,7 @@ bluez
 bluez-cups
 bluez-plugins
 bluez-utils
+celluloid
 cheese
 evince
 firefox
@@ -48,17 +49,31 @@ gnome-shell
 gnome-software
 gnome-text-editor
 gnome-weather
+gst-plugin-pipewire
+gst-plugins-base
+gst-plugins-good
+libva-mesa-driver
 loupe
+mesa
+mesa-vdpau
 nautilus
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
 pipewire
 pipewire-alsa
 pipewire-audio
 pipewire-jack
 pipewire-pulse
+plymouth
 power-profiles-daemon
+terminus-font
+vulkan-intel
+vulkan-mesa-layers
+vulkan-radeon
 wireplumber
 xdg-desktop-portal-gnome
-celluloid
+
 
 # VM
 spice-vdagent
