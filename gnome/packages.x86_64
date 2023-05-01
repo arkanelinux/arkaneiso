@@ -26,6 +26,7 @@ btrfs-progs
 # GNOME ISO
 amberol
 apparmor
+arkane-application-cleaner
 bluez
 bluez-cups
 bluez-plugins
