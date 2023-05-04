@@ -45,6 +45,7 @@ gnome-boxes
 gnome-calculator
 gnome-calendar
 gnome-characters
+gnome-clocks
 gnome-connections
 gnome-console
 gnome-console
@@ -75,6 +76,8 @@ nautilus
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+os-installer
+os-installer-config
 pipewire
 pipewire-alsa
 pipewire-audio
