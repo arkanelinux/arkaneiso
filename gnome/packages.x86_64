@@ -28,6 +28,7 @@ amberol
 apparmor
 arkane-application-cleaner
 arkane-wallpapers
+baobab
 bluez
 bluez-cups
 bluez-plugins
@@ -38,17 +39,27 @@ evince
 firefox
 gdm
 gnome-backgrounds
+gnome-boxes
 gnome-calculator
 gnome-calendar
+gnome-characters
+gnome-connections
 gnome-console
 gnome-console
 gnome-contacts
 gnome-control-center
 gnome-disk-utility
+gnome-firmware
+gnome-font-viewer
+gnome-logs
 gnome-maps
 gnome-photos
+gnome-screenshot
 gnome-shell
 gnome-software
+gnome-software-packagekit-plugin
+gnome-sound-recorder
+gnome-system-monitor
 gnome-text-editor
 gnome-weather
 gst-plugin-pipewire
@@ -69,13 +80,14 @@ pipewire-jack
 pipewire-pulse
 plymouth
 power-profiles-daemon
+simple-scan
+sof-firmware
 terminus-font
 vulkan-intel
 vulkan-mesa-layers
 vulkan-radeon
 wireplumber
 xdg-desktop-portal-gnome
-
 
 # VM
 spice-vdagent
