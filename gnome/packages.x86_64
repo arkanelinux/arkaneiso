@@ -87,12 +87,14 @@ plymouth
 power-profiles-daemon
 simple-scan
 sof-firmware
+switcheroo-control
 terminus-font
 vulkan-intel
 vulkan-mesa-layers
 vulkan-radeon
 wireplumber
 xdg-desktop-portal-gnome
+xdg-user-dirs
 
 # VM
 spice-vdagent
