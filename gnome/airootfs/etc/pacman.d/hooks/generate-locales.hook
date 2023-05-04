@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Type = Package
+Target = os-installer
+
+[Action]
+Description = Configuring locales for os-installer...
+When = PostTransaction
+Exec = /usr/local/bin/generate_locale
