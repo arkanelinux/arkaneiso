@@ -39,6 +39,7 @@ cups
 cups-pdf
 evince
 firefox
+firefox-tweaks-arkane
 gdm
 gnome-backgrounds
 gnome-boxes
@@ -71,6 +72,7 @@ gst-plugins-good
 libva-mesa-driver
 loupe
 mesa
+mesa-tweakers-arkane
 mesa-vdpau
 nautilus
 noto-fonts
