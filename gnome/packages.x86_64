@@ -1,13 +1,14 @@
+amd-ucode
+arch-install-scripts
+arkane-keyring
 base
+intel-ucode
 linux
 linux-firmware
 mkinitcpio
 mkinitcpio-archiso
 openssh
 pv
-arkane-keyring
-intel-ucode
-amd-ucode
 
 # Shell
 neovim
