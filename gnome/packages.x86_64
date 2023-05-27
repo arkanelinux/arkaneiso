@@ -62,7 +62,7 @@ gnome-photos
 gnome-screenshot
 gnome-shell
 gnome-software
-#gnome-software-packagekit-plugin
+gnome-software-packagekit-plugin
 gnome-sound-recorder
 gnome-system-monitor
 gnome-text-editor
