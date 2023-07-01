@@ -7,4 +7,4 @@ Target = os-installer
 [Action]
 Description = Configuring locales for os-installer...
 When = PostTransaction
-Exec = /usr/local/bin/generate_locale
+Exec = /usr/bin/locale-gen -a
