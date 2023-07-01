@@ -21,5 +21,4 @@ file_permissions=(
   ["/etc/gshadow"]="0:0:400"
   ["/etc/sudoers"]="0:0:400"
   ["/root"]="0:0:750"
-  ["/usr/local/bin/generate_locale"]="0:0:755"
 )
