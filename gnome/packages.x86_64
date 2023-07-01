@@ -21,8 +21,9 @@ zsh-completions
 zsh-syntax-highlighting
 
 # OS installation tools
-f2fs-tools
 btrfs-progs
+dosfstools
+f2fs-tools
 
 # GNOME ISO
 amberol
