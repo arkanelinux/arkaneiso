@@ -34,20 +34,19 @@ Contributions, in any form, be it code or ideas are always welcome!
 ### Building the ISO
 #### 1. Install the build tools
 
-```console
+```
 sudo pacman -S archiso
 ```
 
 #### 2. Pull the repository
-
-```console
+```
 git clone https://github.com/arkanelinux/arkaneiso.git
 ```
 
-#### 3. Preparing localrepo
+#### 3. Prepare localrepo
 Some configs such as the one for GNOME are configured by default to utilize a local package repo to allow for the offline installation of Arkane Linux.
 
-```console
+```
 # Pull and cache the packages
 pacman -Syw \
     --noconfirm \
@@ -60,8 +59,8 @@ cd $(pwd)/airootfs/var/localrepo
 repo-add ./localrepo.db.tar ./*[^sig]
 ```
 
-#### 4. Building the ISO
-```console
+#### 4. Building an ISO
+```
 sudo mkarchiso -v -w workdir/ -o out/ .
 ```
 
