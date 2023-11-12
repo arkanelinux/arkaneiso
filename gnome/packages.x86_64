@@ -2,6 +2,7 @@ amd-ucode
 arch-install-scripts
 arkane-keyring
 base
+bind
 intel-ucode
 linux
 linux-firmware
