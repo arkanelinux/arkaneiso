@@ -36,7 +36,6 @@ bluez-cups
 bluez-plugins
 bluez-utils
 celluloid
-cheese
 cups
 cups-pdf
 evince
@@ -93,6 +92,7 @@ pipewire-pulse
 plymouth
 power-profiles-daemon
 simple-scan
+snapshot
 sof-firmware
 switcheroo-control
 terminus-font
