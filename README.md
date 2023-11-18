@@ -28,7 +28,8 @@ Arkane Linux provides ISO images over at the [Arkane Linux download page](https:
 | Config | About |
 | --- | --- |
 | baseline | An ultra-minimal basic configuration suitable as a template for new configs |
-| gnome | The Arkane Linux flagship release, a GNOME-centered experience featuring a graphical installer |
+| gnome | A standard version of Arkane Linux's flagship release, a GNOME-centered experience featuring a graphical installer |
+| gnome-arkdep | An immutable version of Arkane Linux's flagship release, a GNOME-centered experience featuring a graphical installer |
 
 ## Development
 Contributions, in any form, be it code or ideas are always welcome!
