@@ -46,7 +46,6 @@ gnome-software
 gnome-software-packagekit-plugin
 gnome-sound-recorder
 gnome-system-monitor
-podman
 gnome-text-editor
 gnome-weather
 gst-plugin-pipewire
@@ -64,6 +63,7 @@ mesa-tweaks-arkane
 mesa-vdpau
 mkinitcpio
 mkinitcpio-archiso
+mutter-dynamic-buffering
 nautilus
 neovim
 networkmanager
@@ -79,6 +79,7 @@ pipewire-audio
 pipewire-jack
 pipewire-pulse
 plymouth
+podman
 power-profiles-daemon
 pv
 qemu-guest-agent
