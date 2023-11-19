@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="arkanelinux"
+iso_name="arkanelinux-arkdep"
 iso_label="ARKANE_$(date +%Y%m)"
 iso_publisher="Arkane Linux <https://arkanelinux.org>"
 iso_application="Arkane Linux Live/Rescue CD"
