@@ -1,7 +1,7 @@
 [Unit]
 Description=Initializes Pacman keyring
 Requires=etc-pacman.d-gnupg.mount
-After=etc-pacman.d-gnupg.mount time-sync.target
+After=etc-pacman.d-gnupg.mount systemd-timesyncd.service
 BindsTo=etc-pacman.d-gnupg.mount
 Before=archlinux-keyring-wkd-sync.service
 
