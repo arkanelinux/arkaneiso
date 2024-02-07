@@ -17,57 +17,48 @@
 
 
 ## What is Arkane Linux
-Arkane Linux is an opinionated, immutable multi-root Arch-based distibution which aims to provide a GNOME-centered experienced with minimal yet full featured and sensible non-intrusive defaults.
+Arkane Linux is an opinionated, immutable, atomic, multi-root Arch-based distibution which aims to provide a GNOME-centered experienced with minimal yet full featured and sensible non-intrusive defaults.
 
-Is immutability not your thing but still want to experience the arkane? Normal installation ISOs are also available.
+Is immutability not your thing but still want to embrace the Arkane? Normal installation ISOs are also available.
 
 ## Getting Arkane Linux
-Arkane Linux provides ISO images over at the [Arkane Linux download page](https://download.arkanelinux.org/).
+Arkane Linux provides ISO images over at the [Arkane Linux download page](https://arkanelinux.org/downloads).
 
 ## Available configurations
 | Config | About |
 | --- | --- |
-| baseline | An ultra-minimal basic configuration suitable as a template for new configs |
-| gnome | A standard version of Arkane Linux's flagship release, a GNOME-centered experience featuring a graphical installer |
-| gnome-arkdep | An immutable version of Arkane Linux's flagship release, a GNOME-centered experience featuring a graphical installer |
+| gnome-arkdep | Arkdep-based immutable version of Arkane Linux's flagship release, a GNOME-centered experience featuring a graphical installer |
+| gnome | A standard version of the Arkane Linux flagship release, a GNOME-centered experience featuring a graphical installer |
+| baseline | An ultra-minimal basic configuration suitable as a template for new archiso configs |
 
-## Development
-Contributions, in any form, be it code or ideas are always welcome!
+## Spinning an ISO image
+Build requirements;
+- `archiso` and `pacman` are installed
+- Depending on which ISO you want to build you need to also have a clone of either [os-installer-config](https://github.com/arkanelinux/os-installer-config) or [os-installer-config-arkdep](https://github.com/arkanelinux/os-installer-config-arkdep) for the `gnome` and `gnome-arkdep` variants respectively.
 
-### Building the ISO
-#### 1. Install the build tools
+The `gnome` and `gnome-arkdep` images expect a local repository to be available on-disk, this localrepo will allow for the installation of the core system without the need to download packages.
 
-```
-sudo pacman -S archiso
-```
+Build this cache like so;
+```shell
+# Create the localrepo directory inside of the ISO variant you wish to build if it does not yet exist
+mkdir ./arkaneiso/gnome/airootfs/var/localrepo
 
-#### 2. Pull the repository
-```
-git clone https://github.com/arkanelinux/arkaneiso.git
-```
+# For the GNOME variant
+sudo pacman -Syw --noconfirm --cachedir ./arkaneiso/gnome/airootfs/var/localrepo/ --dbpath /tmp - < ./os-installer-config/bits/{base.list,gnome.list}
 
-#### 3. Prepare localrepo
-Some configs such as the one for GNOME are configured by default to utilize a local package repo to allow for the offline installation of Arkane Linux.
+# For the GNOME Arkdep variant
+sudo pacman -Syw --noconfirm --cachedir ./arkaneiso/gnome-arkdep/airootfs/var/localrepo/ --dbpath /tmp - < ./os-installer-config-arkdep/bits/{base.list,arkdep.list}
 
-```
-# Pull and cache the packages
-pacman -Syw \
-    --noconfirm \
-    --cachedir $(pwd)/airootfs/var/localrepo/ \
-    --dbpath /tmp \
-    - < /path/to/package.list
-
-# Generating a database
-cd $(pwd)/airootfs/var/localrepo
+# Navigate to the airootfs/var/localrepo directory and generate the repository database
 repo-add ./localrepo.db.tar ./*[^sig]
 ```
 
-#### 4. Building an ISO
+Then spin the ISO with mkarchiso;
 ```
 sudo mkarchiso -v -w workdir/ -o out/ .
 ```
 
-Once the building process is finished you can find the ISO image inside of the `./out` directory.
+Once the building process is finished you can find your ISO image inside of the `./out` directory.
 
-### How to start hacking
+## How to start hacking
 Refer to the ArchWiki page on [Archiso](https://wiki.archlinux.org/title/Archiso) for information. Or follow the introductionary videos and articles by Erik Dubois on the Carli project, if you are GNU/Linux savvy the [Carli-1](https://www.arcolinuxiso.com/carli-1/) series of videos should provide you with all the information you need to get started.
