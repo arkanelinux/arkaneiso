@@ -34,9 +34,9 @@ Arkane Linux provides ISO images over at the [Arkane Linux download page](https:
 ## Spinning an ISO image
 Build requirements;
 - `archiso` and `pacman` are installed
-- Depending on which ISO you want to build you need to also have a clone of either [os-installer-config](https://github.com/arkanelinux/os-installer-config) or [os-installer-config-arkdep](https://github.com/arkanelinux/os-installer-config-arkdep) for the `gnome` and `gnome-arkdep` variants respectively.
+- The `gnome` variant's localrepo packagelists are found in [os-installer-config](https://github.com/arkanelinux/os-installer-config).
 
-The `gnome` and `gnome-arkdep` images expect a local repository to be available on-disk, this localrepo will allow for the installation of the core system without the need to download packages.
+The `gnome` image expects a local repository to be available on-disk, this localrepo will allow for the installation of the core system without the need to download packages.
 
 Build this cache like so;
 ```shell
@@ -45,9 +45,6 @@ mkdir ./arkaneiso/gnome/airootfs/var/localrepo
 
 # For the GNOME variant
 sudo pacman -Syw --noconfirm --cachedir ./arkaneiso/gnome/airootfs/var/localrepo/ --dbpath /tmp - < ./os-installer-config/bits/{base.list,gnome.list}
-
-# For the GNOME Arkdep variant
-sudo pacman -Syw --noconfirm --cachedir ./arkaneiso/gnome-arkdep/airootfs/var/localrepo/ --dbpath /tmp - < ./os-installer-config-arkdep/bits/{base.list,arkdep.list}
 
 # Navigate to the airootfs/var/localrepo directory and generate the repository database
 repo-add ./localrepo.db.tar ./*[^sig]
