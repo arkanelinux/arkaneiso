@@ -1,5 +1,4 @@
 amberol
-amd-ucode
 apparmor
 arch-install-scripts
 arkane-application-cleaner
@@ -54,7 +53,6 @@ gst-plugin-pipewire
 gst-plugins-base
 gst-plugins-good
 ibus-typing-booster
-intel-ucode
 libva-mesa-driver
 linux
 linux-firmware
