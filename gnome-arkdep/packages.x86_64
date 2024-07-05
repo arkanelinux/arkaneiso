@@ -41,6 +41,7 @@ gnome-firmware
 gnome-font-viewer
 gnome-logs
 gnome-maps
+gnome-menus
 gnome-photos
 gnome-screenshot
 gnome-shell
@@ -52,6 +53,16 @@ gnome-weather
 gst-plugin-pipewire
 gst-plugins-base
 gst-plugins-good
+gvfs
+gvfs-afc
+gvfs-dnssd
+gvfs-dnssd
+gvfs-goa
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+gvfs-wsdd
 ibus-typing-booster
 libva-mesa-driver
 linux
@@ -92,6 +103,9 @@ spice-vdagent
 sudo
 switcheroo-control
 terminus-font
+tpm2-tools
+tpm2-tss
+tpm2-tss-engine
 vulkan-intel
 vulkan-mesa-layers
 vulkan-radeon
@@ -99,7 +113,6 @@ webp-pixbuf-loader
 wireplumber
 xdg-desktop-portal-gnome
 xdg-user-dirs
-yt-dlp
 zsh
 zsh-autosuggestions
 zsh-completions
