@@ -1,5 +1,3 @@
-amberol
-amd-ucode
 apparmor
 arch-install-scripts
 arkane-application-cleaner
@@ -12,7 +10,6 @@ bluez-cups
 bluez-plugins
 bluez-utils
 btrfs-progs
-celluloid
 cups
 cups-pdf
 dbus-broker-units
@@ -53,7 +50,6 @@ gst-plugin-pipewire
 gst-plugins-base
 gst-plugins-good
 ibus-typing-booster
-intel-ucode
 libva-mesa-driver
 linux
 linux-firmware
