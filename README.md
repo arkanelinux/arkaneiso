@@ -2,7 +2,7 @@
 	<a href="https://arkanelinux.org" align="center">
 		<center align="center">
 			<picture>
-			 	<img src="https://raw.githubusercontent.com/arkanelinux/artwork/main/arkanelinux-logo/1200x1200/arkanelinux-logo.png" alt="Arkane Linux" align="center" height="200">
+			 	<img src="https://raw.githubusercontent.com/arkanelinux/artwork/main/originals/arkanelinux-logo.png" alt="Arkane Linux" align="center" height="200">
 			</picture>
 		</center>
 	</a>
