@@ -24,33 +24,11 @@ Is immutability not your thing but still want to embrace the Arkane? Normal inst
 ## Getting Arkane Linux
 Arkane Linux provides ISO images over at the [Arkane Linux download page](https://arkanelinux.org/downloads).
 
-## Available configurations
-| Config | About |
-| --- | --- |
-| gnome-arkdep | Arkdep-based immutable version of Arkane Linux's flagship release, a GNOME-centered experience featuring a graphical installer |
-| gnome | A standard version of the Arkane Linux flagship release, a GNOME-centered experience featuring a graphical installer |
-| baseline | An ultra-minimal basic configuration suitable as a template for new archiso configs |
-
 ## Spinning an ISO image
 Build requirements;
 - `archiso` and `pacman` are installed
-- The `gnome` variant's localrepo packagelists are found in [os-installer-config](https://github.com/arkanelinux/os-installer-config).
 
-The `gnome` image expects a local repository to be available on-disk, this localrepo will allow for the installation of the core system without the need to download packages.
-
-Build this cache like so;
-```shell
-# Create the localrepo directory inside of the ISO variant you wish to build if it does not yet exist
-mkdir ./arkaneiso/gnome/airootfs/var/localrepo
-
-# For the GNOME variant
-sudo pacman -Syw --noconfirm --cachedir ./arkaneiso/gnome/airootfs/var/localrepo/ --dbpath /tmp - < ./os-installer-config/bits/{base.list,gnome.list}
-
-# Navigate to the airootfs/var/localrepo directory and generate the repository database
-repo-add ./localrepo.db.tar ./*[^sig]
-```
-
-Then spin the ISO with mkarchiso;
+Build the ISO with mkarchiso;
 ```
 sudo mkarchiso -v -w workdir/ -o out/ .
 ```
