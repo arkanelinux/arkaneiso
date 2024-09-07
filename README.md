@@ -17,7 +17,7 @@
 
 
 ## What is Arkane Linux
-Arkane Linux is an opinionated, immutable, atomic, multi-root Arch-based distibution which aims to provide a GNOME-centered experienced with minimal yet full featured and sensible non-intrusive defaults.
+ Arkane Linux is an opinionated, immutable, atomic Arch-based distibution which aims to provide a GNOME-centered experienced with minimal yet full featured and sensible non-intrusive defaults.
 
 ## Getting Arkane Linux
 Arkane Linux provides ISO images over at the [Arkane Linux download page](https://arkanelinux.org/downloads).
