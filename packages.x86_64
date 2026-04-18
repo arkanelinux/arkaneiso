@@ -86,6 +86,7 @@ terminus-font
 tpm2-tools
 tpm2-tss
 tpm2-tss-engine
+virtualbox-guest-utils-nox
 vulkan-intel
 vulkan-mesa-layers
 vulkan-nouveau
